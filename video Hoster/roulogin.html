@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VIDEO Hosting</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./css/logo1.png">
+    </div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+
+            <form id="singupji" method="POST">
+                <h1>Create Account</h1>
+                <input type="text" name="userid" id="signup_uid" placeholder="UserID">
+                <input type="text" name="name" id="signup_uname" placeholder="UserName">
+                <input type="email" name="email" id="signup_email" placeholder="Email">
+                <input type="text" name="number" id="signup_mobile" placeholder="Phone Number" title="Enter no between 0-9">
+                <input type="password" name="password" id="signup_pass" placeholder="Password">
+                <button type="submit">SignUp</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form method="POST" id="loginji">
+                <h1>Log In</h1>
+                <input type="text" name="uid" id="login_uid" placeholder="Userid">
+                <input type="password" name="password" id="login_pass" placeholder="Password">
+                <button type="submit" id="login">Log In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome!</h1>
+                    <p>Start Hosting your videos Now!</p>
+                    <button class="ghost" id="signIn">Log In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hi, Friends</h1>
+                    <p></p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var signUpButton = document.getElementById('signUp');
+        var signInButton = document.getElementById('signIn');
+        var container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+    <script src="./JS/login.js"></script>
+</body>
+
+</html>

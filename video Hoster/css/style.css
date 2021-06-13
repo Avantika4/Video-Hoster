@@ -1,0 +1,337 @@
+html
+{
+	scroll-behavior: smooth; n
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+  
+}
+
+#container
+{
+	width: 1347px;
+	height: 555px;
+	overflow: hidden;
+}
+
+#slider
+{
+	position: relative;
+	width: 5646px;
+	animation-name: slideranim;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+
+}
+
+#slider img
+{
+	float: left;
+}
+
+@keyframes slideranim
+{
+	0%
+	{
+		left: 0px;
+	}
+	20%
+	{
+		left: 0px;
+	}
+	25%
+	{
+		left:-1366px;
+	}
+	45%
+	{
+		left: -1366px;
+	}
+	50%
+	{
+		left: -2732px;
+	}
+	70%
+	{
+		left: -2732px;
+	}
+	75%
+	{
+		left: -4098px;
+	}
+}
+
+body
+{
+	background-color: white;
+}
+
+ul
+{
+	float:right;
+	list-style-type:none; 
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: 	black	;
+	padding: 5px 20px;
+	border: 1px solid 	white;
+	transition: 0.6s ease;
+}
+
+ul li a:hover{
+	background-color: 	#514747;
+	color :white	;
+}
+
+.logo img{
+	float: left;
+	width: 100px;
+	height: auto;
+}
+
+
+.container1 {
+  position: relative;
+  width: 30%;
+  left:0px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FDF2E4;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 650px;
+  color: black;
+  text-align: center;
+  padding: 80px 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 100%;
+  left: 200px;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+div.fixed {
+  position: relative;
+  bottom: 60px;
+  left: 440px;
+  width: 300px;
+}	
+
+
+
+.t {  
+  position: relative;
+  display: inline-block;
+}
+
+.t .to {
+  visibility: hidden;
+  width: 600px;
+  color: black;
+  text-align: center;
+  padding: 100px 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 100%;
+  left: 50px;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.t:hover .to {
+  visibility: visible;
+  opacity: 1;
+}
+div.f {
+  position: relative;
+  bottom: 97px;
+  left: 580px;
+  width: 300px;
+}
+
+
+
+.t1 {
+  position: relative;
+  display: inline-block;
+}
+
+.t1 .to1 {
+  visibility: hidden;
+  width: 650px;
+  color: black;
+  text-align: center;
+  padding: 80px 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 80%;
+  left: -180px;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.t1:hover .to1 {
+  visibility: visible;
+  opacity: 1;
+}
+div.f1 {
+  position: relative;
+  bottom: 135px;
+  left: 780px;
+  width: 300px;
+}		
+
+
+.t2 {
+  position: relative;
+  display: inline-block;
+}
+
+.t2 .to2 {
+  visibility: hidden;
+  width: 600px;
+  color: black;
+  text-align: center;
+  padding: 100px 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 130%;
+  left: -250px;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.t2:hover .to2 {
+  visibility: visible;
+  opacity: 1;
+}
+div.f2 {
+  position: relative;
+  bottom: 185px;
+  left: 890px;
+  width: 300px;
+}
+
+.t3 {
+  position: relative;
+  display: inline-block;
+}
+
+.t3 .to3 {
+  visibility: hidden;
+  width: 600px;
+  color: black;
+  text-align: center;
+  padding: 60px 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 180%;
+  left: -480px;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.t3:hover .to3 {
+  visibility: visible;
+  opacity: 1;
+}
+div.f3 {
+  position: relative;	
+  bottom: 235px;
+  left: 1080px;
+  width: 300px;
+}
+
+div.page
+{
+	position: absolute;
+	bottom: -1105px;
+  padding:0px;
+}
+
+div.page2
+{
+  position: relative;
+}
+
+
+
+.play-button {
+  margin: 0 auto;
+  top: 230%;
+  right:4%;
+  position: absolute;  
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 50px;
+  border-color: transparent transparent transparent #000;
+  opacity: .75; 
+}
+
+.play-button-outer:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.play-button-outer:hover .play-button {
+  opacity: 1;
+}

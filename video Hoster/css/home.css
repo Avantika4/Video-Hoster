@@ -1,0 +1,31 @@
+body{
+    background-color:black;
+    color:aliceblue;
+
+}
+
+button{
+    background-color: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    background-color: linear-gradient(360deg, rgba(219,182,76,0.36207986612613796) 50%, rgba(160,161,109,0) 100%);
+    width: 120px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 35px 30px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(209, 149, 149); /* Green */
+    color: rgb(209, 149, 149);
+  }
+
+#result_video{
+    background-color:rgba(117, 86, 86, 0.952);
+    color: black;
+    margin:5%;
+    padding:10%;
+}

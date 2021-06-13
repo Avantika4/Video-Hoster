@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload Your Videos!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form" enctype="multipart/form-data" action="#" method="post" id="videoform">
+        <div class="des">
+            <p><input name="file-upload-field" type="text" class="file-upload-field-1" value="" id="posttitle" placeholder="Give video some title!"></p>
+            <textarea rows="10" cols="39" class="file-upload-field" placeholder="Description" id="postdesc"></textarea>
+
+        </div>
+        <div data-text="Select Your File!">
+            <input name="file-upload-field" type="file" id="FileField" value="">
+        </div>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./JS/upload.js"></script>
+</body>
+
+</html>
